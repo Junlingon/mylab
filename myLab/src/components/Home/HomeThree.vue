@@ -66,7 +66,7 @@
             ></a>
             <div
               class="bg"
-              style="background-image: url('../../assets/img/6638a.png')"
+              :style="{ 'background-image': 'url(' + Bg + ')' }"
             ></div>
           </div>
           <div class="wrapper-q">
@@ -249,7 +249,10 @@
     </div>
   </section>
 </template>
+
   <script setup lang="ts">
+import Bg from "../../assets/img/6638a.png";
+
 // import Vue from 'vue'
 // export default Vue.extend({
 
@@ -423,6 +426,9 @@ img {
   opacity: 0;
   transition: opacity 1s;
 }
+// .bg {
+//   // background-image: url("../../assets/img/6638a.png");
+// }
 .wrapper-default-hover-height .bg,
 .wrapper-default-hover-height .goto {
   opacity: 1;
