@@ -5,7 +5,6 @@
       style="display: flex; flex-direction: column; justify-content: center"
     >
       <div
-        class=""
         style="
           display: flex;
           align-items: center;
@@ -43,12 +42,12 @@
                               name="username"
                               placeholder="账户名"
                               autocomplete="off"
-                              value=""
                               class="layui-input"
                               lay-verify="required"
                               lay-reqtext="账户名不能为空"
                               id="username"
                               lay-vertype="tips"
+                              v-model="form.username"
                             />
                           </div>
                         </div>
@@ -59,7 +58,7 @@
                               name="password"
                               placeholder="密码"
                               autocomplete="off"
-                              value=""
+                              v-model="form.password"
                               class="layui-input"
                               lay-verify="required"
                               lay-reqtext="密码不能为空"
@@ -91,8 +90,7 @@
                             />
                           </div>
                         </div>
-                        <div
-                          class="aui-register-form-item"
+                        <div class="aui-register-form-item"
                           id="pare"
                           style="
                             margin-top: 30px;
@@ -112,6 +110,7 @@
                             lay-submit=""
                             lay-filter="*"
                             style="flex: 1; margin-right: 20px"
+                            @click="submitForm"
                           />
                           <div style="width: 100px" id="regs">
                             <a
@@ -172,6 +171,52 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import  Service  from "../utils/Api"
+import _ from "lodash";
+import { ElMessage } from "element-plus";
+import { getCurrentInstance, ref, reactive } from "vue";
+import { useRoute, useRouter } from "vue-router";
+const { proxy, ctx }: any = getCurrentInstance();
+const $router = useRouter();
+//定义参数
+const form = ref({
+  username: "", //账号
+  password: "", //密码
+})
+
+
+//登录按钮
+const submitForm = async () => {
+  if (_.trim(form.value.username) && _.trim(form.value.password)) {
+    const res:any= await Service.Service.login({
+      username: form.value.username,
+      password: form.value.password,
+    });
+    if(res.data==null){
+      ElMessage({
+      dangerouslyUseHTMLString: true,
+      message: `账号或者密码错误`,
+      type: "error",
+      showClose: true,
+    });
+    }else{
+      localStorage.setItem("token", res.data.tokenValue);
+      $router.push({ path: "/" });
+    }
+    
+  } else {
+    ElMessage({
+      dangerouslyUseHTMLString: true,
+      message: `请输入正确账号密码`,
+      type: "warning",
+      showClose: true,
+    });
+  }
+};
+</script>
+
 
 <style scoped>
 .layui-hide-xs {

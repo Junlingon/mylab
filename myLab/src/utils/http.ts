@@ -4,8 +4,8 @@ import router from '../router'
 import { useStore } from '../stores/counter'
 import { ElLoading } from "element-plus";
 import { ElMessage } from "element-plus";
-var httpurl = useStore().baseHost;
-console.log(httpurl)
+var httpurl = "http://121.41.112.205:8088";
+
 const service = axios.create({
     baseURL: httpurl,
     timeout: 9000,

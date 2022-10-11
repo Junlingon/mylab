@@ -129,7 +129,25 @@
           </div>
         </span>
         <a href="/about"><span class="header-item">关于</span></a>
-        <span class="header-item">
+        <span class="header-item" v-if="isLogin">
+          <el-avatar :size="50" :src="circleUrl" />
+          <div class="subnav animate-fade">
+            <ul>
+              <li>
+                <a
+                  href="/login"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="https://storage.360buyimg.com/neos-static-files/0a54778a-321b-4fba-a631-1d4786c24f20.png"
+                    alt=""
+                  />
+                  <p>点击登录</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </span>
+        <span class="header-item" v-else>
           <el-avatar :size="50" :src="circleUrl" />
           <div class="subnav animate-fade">
             <ul>
@@ -161,17 +179,12 @@
               </li>
             </ul>
             <ul>
-              <li>
-                <a
-                  href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIxMzExMjYwOQ==&amp;action=getalbum&amp;album_id=1664686948306780160#wechat_redirect"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
+              <li @click="Signout">
+                <img
                     src="https://storage.360buyimg.com/neos-static-files/9a0af747-de7b-4e87-8de0-01d70bee5eed.png"
                     alt=""
                   />
                   <p>退出登录</p>
-                </a>
               </li>
             </ul>
           </div>
@@ -183,7 +196,7 @@
 
 <script lang="ts" setup>
 import { reactive, toRefs } from "vue";
-
+import  Service  from "../../utils/Api"
 const state = reactive({
   circleUrl:
     "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
@@ -193,6 +206,17 @@ const state = reactive({
 });
 
 const { circleUrl, squareUrl, sizeList } = toRefs(state);
+
+const isLogin:boolean=localStorage.getItem("token")?false:true
+
+function Signout(){
+  const res = Service.Service.logout({});
+  localStorage.clear();
+  console.log(res);
+  console.log(isLogin);
+  
+}
+
 </script>
 
 <style lang="less" scoped>

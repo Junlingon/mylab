@@ -1,3 +1,4 @@
+
 <template>
   <section>
     <div class="content">
@@ -538,12 +539,7 @@
     </div>
   </section>
 </template>
-<script setup lang="ts">
-// import Vue from 'vue'
-// export default Vue.extend({
 
-// })
-</script>
 
 <style scoped>
 section {
