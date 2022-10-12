@@ -10,7 +10,10 @@ class Service {
     static async logout(data: any) {
         return request('/login/logout', data)
     }
-
+    //获取用户账号列表
+    static async replacePassword(data: any) {
+        return request('/login/replacePassword', data)
+    }
 
     //获取用户账号列表
     static async UserList(data: any) {

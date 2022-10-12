@@ -35,7 +35,7 @@ service.interceptors.response.use((res: any): any => {
             return Promise.resolve(res.data);
         } else if (res.data.code == 102) {
             localStorage.clear();
-            router.push("/login");
+            // router.push("/login");
             loadingIsShow.close();
             return Promise.reject(res);
         }

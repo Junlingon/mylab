@@ -133,7 +133,7 @@
           <el-avatar :size="50" :src="circleUrl" />
           <div class="subnav animate-fade">
             <ul>
-              <li>
+              <li style="margin: unset;">
                 <a
                   href="/login"
                   rel="noopener noreferrer"
@@ -141,14 +141,14 @@
                     src="https://storage.360buyimg.com/neos-static-files/0a54778a-321b-4fba-a631-1d4786c24f20.png"
                     alt=""
                   />
-                  <p>点击登录</p>
+                  <p style="line-height: 35px;">点击登录</p>
                 </a>
               </li>
             </ul>
           </div>
         </span>
         <span class="header-item" v-else>
-          <el-avatar :size="50" :src="circleUrl" />
+          <el-avatar :size="50" :src="avatur" />
           <div class="subnav animate-fade">
             <ul>
               <li>
@@ -160,22 +160,17 @@
                     src="https://storage.360buyimg.com/neos-static-files/0a54778a-321b-4fba-a631-1d4786c24f20.png"
                     alt=""
                   />
-                  <p>信息</p>
+                  <p>消息</p>
                 </a>
               </li>
             </ul>
             <ul>
-              <li>
-                <a
-                  href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIxMzExMjYwOQ==&amp;action=getalbum&amp;album_id=1369610438157369345#wechat_redirect"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
+              <li @click="open">
+                <img
                     src="https://storage.360buyimg.com/neos-static-files/d9945643-d53a-4310-aeb5-3f20d3b6e157.jpeg"
                     alt=""
                   />
                   <p>修改密码</p>
-                </a>
               </li>
             </ul>
             <ul>
@@ -191,12 +186,17 @@
         </span>
       </nav>
     </div>
+    <Password ref="PasswordRef" ></Password>
   </header>
 </template>
 
 <script lang="ts" setup>
-import { reactive, toRefs } from "vue";
+import { reactive, toRefs,ref } from "vue";
 import  Service  from "../../utils/Api"
+import avatur from "../../assets/img/avatar.png"
+import Password from "./Header/Password.vue"
+
+//头像
 const state = reactive({
   circleUrl:
     "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
@@ -204,19 +204,19 @@ const state = reactive({
     "https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png",
   sizeList: ["small", "", "large"] as const,
 });
-
 const { circleUrl, squareUrl, sizeList } = toRefs(state);
-
+//登录状态切换
 const isLogin:boolean=localStorage.getItem("token")?false:true
-
 function Signout(){
   const res = Service.Service.logout({});
   localStorage.clear();
-  console.log(res);
-  console.log(isLogin);
-  
+  location=location  
 }
-
+//修改密码
+const PasswordRef = ref(null)!; 
+const open=()=>{
+  PasswordRef.value.open()
+}
 </script>
 
 <style lang="less" scoped>
@@ -345,5 +345,8 @@ img {
   font-size: 16px;
   color: #505050;
   text-align: center;
+}
+.header-item p{
+  line-height: 35px;
 }
 </style>

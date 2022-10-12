@@ -18,12 +18,8 @@
           <div class="aui-register-box" style="margin: 0">
             <div class="aui-register-main">
               <div class="aui-register-link" style="width: 180px">
-                <!--<a href="javascript:;" class="fl">已有账号？去登录</a>-->
                 <a href="/" style="margin-left: 25px">返回首页</a>
               </div>
-              <!-- <div class="aui-register-logo">
-              <img src="/cxcyedu_v8/images/logo1.png" alt="">
-            </div> -->
               <div class="aui-register-form" id="verifyCheck">
                 <div class="register-wrap" id="register-wrap">
                   <div class="register" id="register">
@@ -202,6 +198,7 @@ const submitForm = async () => {
       showClose: true,
     });
     }else{
+      localStorage.setItem("username", form.value.username);
       localStorage.setItem("token", res.data.tokenValue);
       $router.push({ path: "/" });
     }
