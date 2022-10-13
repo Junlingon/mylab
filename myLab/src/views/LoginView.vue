@@ -200,6 +200,7 @@ const submitForm = async () => {
     }else{
       localStorage.setItem("username", form.value.username);
       localStorage.setItem("token", res.data.tokenValue);
+      console.log(localStorage.getItem("token"));
       $router.push({ path: "/" });
     }
     

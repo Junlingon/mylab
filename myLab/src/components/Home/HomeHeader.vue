@@ -130,7 +130,7 @@
         </span>
         <a href="/about"><span class="header-item">关于</span></a>
         <span class="header-item" v-if="isLogin">
-          <el-avatar :size="50" :src="circleUrl" />
+          <el-avatar :size="50" :src="people" />
           <div class="subnav animate-fade">
             <ul>
               <li style="margin: unset;">
@@ -151,17 +151,12 @@
           <el-avatar :size="50" :src="avatur" />
           <div class="subnav animate-fade">
             <ul>
-              <li>
-                <a
-                  href="https://jelly.jd.com/teamhome/5b0ff3a0629834a34b663617"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
+              <li @click="news">
+                <img
                     src="https://storage.360buyimg.com/neos-static-files/0a54778a-321b-4fba-a631-1d4786c24f20.png"
                     alt=""
                   />
                   <p>消息</p>
-                </a>
               </li>
             </ul>
             <ul>
@@ -187,6 +182,7 @@
       </nav>
     </div>
     <Password ref="PasswordRef" ></Password>
+    <Message ref="MessageRef" ></Message>
   </header>
 </template>
 
@@ -194,19 +190,14 @@
 import { reactive, toRefs,ref } from "vue";
 import  Service  from "../../utils/Api"
 import avatur from "../../assets/img/avatar.png"
+import people from "../../assets/img/people.png"
 import Password from "./Header/Password.vue"
+import Message from "./Header/Message.vue"
 
-//头像
-const state = reactive({
-  circleUrl:
-    "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
-  squareUrl:
-    "https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png",
-  sizeList: ["small", "", "large"] as const,
-});
-const { circleUrl, squareUrl, sizeList } = toRefs(state);
+
 //登录状态切换
 const isLogin:boolean=localStorage.getItem("token")?false:true
+//退出登录
 function Signout(){
   const res = Service.Service.logout({});
   localStorage.clear();
@@ -216,6 +207,11 @@ function Signout(){
 const PasswordRef = ref(null)!; 
 const open=()=>{
   PasswordRef.value.open()
+}
+//消息
+const MessageRef = ref(null)!; 
+const news=()=>{
+  MessageRef.value.drawer=true
 }
 </script>
 
