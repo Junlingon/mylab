@@ -221,7 +221,7 @@ class Service {
 
     //公告列表
     static async NoticeList(data: any) {
-        return request('notice/search', data)
+        return request('/notice/list', data)
     }
 
     //公告详情

@@ -38,6 +38,8 @@ const getdetails = async () => {
     page: 1,
     limit: 10
   });
+  console.log(res);
+  
   gridData.value = res.data.list;
   console.log(gridData.value);
   

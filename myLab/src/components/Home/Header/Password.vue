@@ -14,30 +14,29 @@ const open = () => {
   })
     .then(({ value }) => {
       const res: any = Service.Service.replacePassword({
-        usename: localStorage.getItem("username"),
+        username: localStorage.getItem("username"),
         password: value,
       });
-      if (res.data.code == 200) {
+      return res  
+    }).then((r)=>{ //获取到请求的结果
+      console.log(r);
+       if (r.code == 200) {
         ElMessage({
           type: 'success',
           message: `修改成功,请重新登录`,
         })
-        Service.Service.logout({});
-        localStorage.clear();
         setTimeout(() => {
           router.push("/login");
         }, 900)
-      } else {
-        console.log(res.data.msg);
-        
+        Service.Service.logout({});
+        localStorage.clear();
+      } else {   
         ElMessage({
           type: 'error',
-          message: `${res.data.msg}`,
+          message: `${r.msg}`,
         })
       }
-
-
-    })
+      })
     .catch(() => {
       ElMessage({
         type: 'info',

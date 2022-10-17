@@ -17,8 +17,8 @@ let loadingIsShow: any = null;
 // 请求拦截
 service.interceptors.request.use((res: any) => {
     // res.headers["satoken"] = localStorage.getItem("token");
-    console.log(res);
-    console.log(window.localStorage.getItem("token"));
+    // console.log(res);
+    // console.log(window.localStorage.getItem("token"));
     res.headers.satoken = localStorage.getItem("token");
     loadingIsShow = ElLoading.service({
         fullscreen: true,

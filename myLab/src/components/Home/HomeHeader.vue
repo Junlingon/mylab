@@ -3,65 +3,7 @@
     <div class="headerBox">
       <a href="/" class="logo">实验室管理系统</a>
       <nav style="display: flex; align-items: center">
-        <span class="header-item"
-          >公告
-          <div class="subnav animate-fade">
-            <ul>
-              <li>
-                <a
-                  href="https://ling.jd.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="https://img10.360buyimg.com/neos/jfs/t1/168113/22/8241/5499/60361186E2fd9c85b/8128d1a04f01874a.png"
-                    alt=""
-                  />
-                  <p>公告一</p>
-                  <p>一站式线上智能设计服务平台</p></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://taro.jd.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="https://img13.360buyimg.com/neos/jfs/t1/162526/10/5272/3402/601bad26E716f300a/8c7be7faf66c199f.png"
-                    alt=""
-                  />
-                  <p>公告二</p>
-                  <p>开放式跨端跨框架解决方案</p></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://jelly.jd.com/article/5ffbc4fcdd7c080151c80c74"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="https://img12.360buyimg.com/neos/jfs/t1/162451/21/5488/4418/601baa07Ed8bae239/d54d63c9f97b287d.png"
-                    alt=""
-                  />
-                  <p>Deco</p>
-                  <p>设计稿生成多端代码</p></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://jelly.jd.com/article/6006b1065b6c6a01506c885e"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="https://img13.360buyimg.com/neos/jfs/t1/154124/10/17320/3895/601bae73Ef28518dd/071dfe832174e7be.png"
-                    alt=""
-                  />
-                  <p>Tide</p>
-                  <p>研发一体化方案</p></a
-                >
-              </li>
-            </ul>
-          </div>
-        </span>
+        <Notice></Notice>
         <span class="header-item"
           >日志
           <div class="subnav animate-fade">
@@ -193,6 +135,7 @@ import avatur from "../../assets/img/avatar.png"
 import people from "../../assets/img/people.png"
 import Password from "./Header/Password.vue"
 import Message from "./Header/Message.vue"
+import Notice from "./Header/Notice.vue"
 
 
 //登录状态切换
