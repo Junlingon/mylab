@@ -24,6 +24,11 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: () => import('../views/LoginView.vue')
+    },
+    {//日志
+      path: '/Log',
+      name: 'Log',
+      component: () => import('../views/LogView.vue')
     }
   ]
 })

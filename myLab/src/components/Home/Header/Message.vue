@@ -38,10 +38,10 @@ const getdetails = async () => {
     page: 1,
     limit: 10
   });
-  console.log(res);
+  // console.log(res);
   
   gridData.value = res.data.list;
-  console.log(gridData.value);
+  // console.log(gridData.value);
   
 };
 const getContent=(e:any)=>{

@@ -515,23 +515,23 @@
       <ul class="social">
         <li>
           <img
-            src="https://img13.360buyimg.com/neos/jfs/t1/168289/16/4488/2214/60125c19Eade9400c/7c8a406972376650.png"
-            alt="微信公众号"
+            :src="wxImg"
+            alt="微信号"
           />
           <div class="pop">
             <img
-              src="https://img20.360buyimg.com/neos/jfs/t1/153455/14/15593/24890/60125bc1E968e6b4c/4c02e0d16f512fc0.jpg"
+              :src="WeChatImg"
               alt=""
             />
           </div>
         </li>
         <li>
           <a
-            href="https://github.com/o2team"
+            href="https://github.com/Junlingon"
             target="_blank"
             rel="noopener noreferrer"
             ><img
-              src="https://img14.360buyimg.com/neos/jfs/t1/155750/6/7878/2021/60125c3aEbc1c9947/93271a609db7a22d.png"
+              :src="gitImg"
               alt="github"
           /></a>
         </li>
@@ -540,6 +540,12 @@
   </section>
 </template>
 
+
+<script lang="ts" setup>
+import gitImg from "@/assets/img/git.png"
+import wxImg from "@/assets/img/wx.png"
+import WeChatImg from "@/assets/img/WeChat.jpg"
+</script>
 
 <style scoped>
 section {
@@ -633,5 +639,8 @@ img {
   height: 160px;
   padding: 5px;
   background-color: #fff;
+}
+.social li:hover .pop{
+    display: block;
 }
 </style>

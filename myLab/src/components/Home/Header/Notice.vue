@@ -65,7 +65,7 @@ const getdetails = async () => {
         page: 1,
         limit: 5
     });
-    console.log(res);
+    // console.log(res);
     gridData.value = res.data.list;
     //   console.log(gridData.value);
 };
@@ -76,7 +76,7 @@ onMounted(() => {
 })
 </script>
 
-<style>
+<style scoped>
 .header-item {
     position: relative;
     display: inline-block;
@@ -107,7 +107,6 @@ nav .header-item:hover {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-
 .subnav.animate-fade {
     pointer-events: none;
     opacity: 0;

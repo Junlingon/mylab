@@ -11,28 +11,13 @@
             <ul>
               <li>
                 <a
-                  href="https://jelly.jd.com/teamhome/5b0ff3a0629834a34b663617"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/Log"
                   ><img
                     src="https://storage.360buyimg.com/neos-static-files/0a54778a-321b-4fba-a631-1d4786c24f20.png"
                     alt=""
                   />
                   <p>Jelly</p>
                   <p>JELLY专栏</p></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://juejin.cn/user/1134351699149854"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="https://storage.360buyimg.com/neos-static-files/04ec7cce-5264-4b76-8f80-5aa8eb5cf2f8.svg"
-                    alt=""
-                  />
-                  <p>掘金</p>
-                  <p>凹凸掘金专栏</p></a
                 >
               </li>
             </ul>
