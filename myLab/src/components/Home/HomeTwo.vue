@@ -8,15 +8,19 @@
           ><span class="name">五年砺银</span>
         </div>
         <div class="paging">
-          <div class="backward">左箭头</div>
+          <div class="backward">
+            <svg id="\u7EC4_15865" data-name="\u7EC4 15865" xmlns="http://www.w3.org/2000/svg" width="50" height="11.51" viewBox="0 0 50 11.51" preserveAspectRatio="xMidYMid meet"><defs></defs><rect id="\u77E9\u5F62_73" data-name="\u77E9\u5F62 73" class="cls-1" width="50" height="2.804" transform="translate(0 8.706)"></rect><rect id="\u77E9\u5F62_74" data-name="\u77E9\u5F62 74" class="cls-1" width="12.327" height="2.804" transform="translate(10.7 1.983) rotate(135)"></rect></svg>
+          </div>
           <div class="vertical-divider"></div>
-          <div class="forward can-turning">右箭头</div>
+          <div class="forward can-turning">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="11.51" viewBox="0 0 50 11.51" preserveAspectRatio="xMidYMid meet"><defs></defs><g id="\u7EC4_15864" data-name="\u7EC4 15864" transform="translate(-3341.81 -1380.443)"><rect id="\u77E9\u5F62_73" data-name="\u77E9\u5F62 73" class="cls-1" width="50" height="2.804" transform="translate(3341.81 1389.149)"></rect><rect id="\u77E9\u5F62_74" data-name="\u77E9\u5F62 74" class="cls-1" width="12.327" height="2.804" transform="translate(3383.093 1380.443) rotate(45)"></rect></g></svg>
+          </div>
         </div>
       </div>
       <div class="main">
         <div class="wrapper">
           <a
-            href="https://jelly.jd.com/article/5fe58d1bb402750151b4e119"
+            href="/article/1"
             target="_blank"
             rel="noopener noreferrer"
             ><div class="content-img">

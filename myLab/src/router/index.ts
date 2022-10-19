@@ -29,7 +29,15 @@ const router = createRouter({
       path: '/Log',
       name: 'Log',
       component: () => import('../views/LogView.vue')
-    }
+    },
+    {//文章
+      path: '/article/:id',
+      name: 'Article',
+      component: () => import('../views/ArticleView.vue'),
+      meta: {
+        title: "文章"
+      },
+    },
   ]
 })
 
