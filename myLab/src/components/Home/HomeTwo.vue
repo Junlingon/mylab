@@ -18,89 +18,21 @@
         </div>
       </div>
       <div class="main">
-        <div class="wrapper">
+        <div class="wrapper" v-for="(item,index) in ListData" :key="index" :class="{'wrapper-odd':index%2==0,'wrapper-last':index==4}">
           <a
-            href="/article/1"
+            :href=item.href
             target="_blank"
             rel="noopener noreferrer"
             ><div class="content-img">
               <img
                 class="img-inner"
-                src="https://img13.360buyimg.com/neos/jfs/t1/168752/36/8584/11896/603ca938Ee18dae39/8ad3e0a2d3c60a21.png"
-                alt="凹凸实验室"
+                :src="item.img"
+                :alt="item.contentName"
               />
             </div>
             <div class="content-underline"></div>
-            <div class="content-name">凹凸实验室</div>
-            <div class="content-desc">凹凸实验室的过去与未来</div></a
-          >
-        </div>
-        <div class="wrapper wrapper-odd">
-          <a
-            href="https://jelly.jd.com/article/5fe58e83b402750151b4e12b"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div class="content-img">
-              <img
-                class="img-inner"
-                src="https://img11.360buyimg.com/neos/jfs/t1/171061/27/8667/50069/603ca1fdE3487a905/0ea130c3c48a3142.png"
-                alt="智能设计平台"
-              />
-            </div>
-            <div class="content-underline"></div>
-            <div class="content-name">智能设计平台</div>
-            <div class="content-desc">逐梦设计数智化</div></a
-          >
-        </div>
-        <div class="wrapper">
-          <a
-            href="https://jelly.jd.com/article/5fec7fa0468efc014a4e5309"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div class="content-img">
-              <img
-                class="img-inner"
-                src="https://img13.360buyimg.com/neos/jfs/t1/156356/22/11840/11189/603ca84fE94bbfe59/7c1dbad091b04e45.png"
-                alt="羚珑页面可视化搭建"
-              />
-            </div>
-            <div class="content-underline"></div>
-            <div class="content-name">羚珑页面可视化搭建</div>
-            <div class="content-desc">成长蜕变之路</div></a
-          >
-        </div>
-        <div class="wrapper wrapper-odd">
-          <a
-            href="https://jelly.jd.com/article/5fffb946d0ab640145e75e95"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div class="content-img">
-              <img
-                class="img-inner"
-                src="https://img11.360buyimg.com/neos/jfs/t1/161507/40/8742/9568/603ca867Efbeee86a/e39ac3dd17c963a0.png"
-                alt="基础服务体系"
-              />
-            </div>
-            <div class="content-underline"></div>
-            <div class="content-name">基础服务体系</div>
-            <div class="content-desc">构筑服务端技术中枢</div></a
-          >
-        </div>
-        <div class="wrapper wrapper-last">
-          <a
-            href="https://jelly.jd.com/article/5ffbc4fcdd7c080151c80c74"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div class="content-img">
-              <img
-                class="img-inner"
-                src="https://img13.360buyimg.com/neos/jfs/t1/163597/16/8457/6747/603ca886Eb3b429bb/2f2302fd69479962.png"
-                alt="DECO"
-              />
-            </div>
-            <div class="content-underline"></div>
-            <div class="content-name">DECO</div>
-            <div class="content-desc">智能代码·开启产研效率革命</div></a
+            <div class="content-name">{{item.contentName}}</div>
+            <div class="content-desc">{{item.contentDesc}}</div></a
           >
         </div>
       </div>
@@ -108,10 +40,46 @@
   </section>
 </template>
 <script setup lang="ts">
-// import Vue from 'vue'
-// export default Vue.extend({
+import img1 from "@/assets/img/P2_1.png"
+import img2 from "@/assets/img/P2_2.png"
+import img3 from "@/assets/img/P2_3.png"
+import img4 from "@/assets/img/P2_4.png"
+import img5 from "@/assets/img/P2_5.png"
 
-// })
+const ListData=[
+  {
+    img:img1,
+    href:'/article/1',
+    contentName:"凹凸实验室",
+    contentDesc:"凹凸实验室的过去与未来"
+  },
+  {
+    img:img2,
+    href:'/article/2',
+    contentName:"智能设计平台",
+    contentDesc:"逐梦设计数智化",
+  },
+  {
+    img:img3,
+    href:'/article/3',
+    contentName:"羚珑页面可视化搭建",
+    contentDesc:"成长蜕变之路",
+  },
+  {
+    img:img4,
+    href:'/article/4',
+    contentName:"基础服务体系",
+    contentDesc:"构筑服务端技术中枢",
+  },
+  {
+    img:img5,
+    href:'/article/5',
+    contentName:"DECO",
+    contentDesc:"智能代码·开启产研效率革命",
+  },
+]
+
+
 </script>
 
 <style lang="less" scoped>

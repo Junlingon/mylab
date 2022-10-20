@@ -13,15 +13,15 @@
                             <div class="Header_nav">
                                 <div class="Header_blackline"></div>
                                 <ul>
-                                    <li class=""><a class="font_14_fixed" href="/articlelist/exp">经验沉淀</a>
+                                    <li class=""><a class="font_14_fixed">经验沉淀</a>
                                         <div class="Header_nav_li_line"></div>
                                     </li>
-                                    <li class=""><a class="font_14_fixed" href="/designtools/all">设计工具</a></li>
-                                    <li class=""><a class="font_14_fixed" href="/teamtro">团队介绍</a>
+                                    <li class=""><a class="font_14_fixed" >设计工具</a></li>
+                                    <li class=""><a class="font_14_fixed" >团队介绍</a>
                                         <div class="Header_nav_li_line"></div>
                                     </li>
                                     <li class=""><a class="isSvg"
-                                            href="/jellyStore/5fead12eb402750151b51d2e#expandAll"><svg width="90px"
+                                            ><svg width="90px"
                                                 height="14px" viewBox="0 0 90 14" version="1.1"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <title>形状</title>
@@ -37,7 +37,7 @@
                                                     </g>
                                                 </g>
                                             </svg></a></li>
-                                    <li class=""><a class="isSvg" href="/soap/column?soapNum=1"><svg width="53px"
+                                    <li class=""><a class="isSvg" ><svg width="53px"
                                                 height="14px" viewBox="0 0 53 14" version="1.1"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <title>形状结合</title>
