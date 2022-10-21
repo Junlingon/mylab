@@ -38,6 +38,15 @@ const router = createRouter({
         title: "文章"
       },
     },
+    {
+      path: '/404',
+      name: '404',
+      component: () => import('../views/404View.vue'),
+    },
+    {
+      path: '/:pathMatch(.*)',
+      redirect: '/404'
+    }
   ]
 
 })
