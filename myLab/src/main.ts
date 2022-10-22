@@ -10,6 +10,10 @@ import './assets/main.css'
 import { createPinia } from 'pinia'
 app.use(createPinia())
 
+import Testing from '@/utils/testing'
+
+
+
 import App from './App.vue'
 
 // // JWT 用户权限校验，判断 TOKEN 是否在 localStorage 当中
@@ -49,4 +53,5 @@ router.beforeEach((to, from, next) => {
 
 app.use(router)
 app.use(ElementPlus)
+app.use(Testing)
 app.mount('#app')

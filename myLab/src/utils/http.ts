@@ -1,10 +1,13 @@
 import axios from 'axios';
-import { createPinia } from 'pinia';
-import router from '../router'
-import { useStore } from '../stores/counter'
+import { httpStore } from '@/stores/http'
 import { ElLoading } from "element-plus";
 import { ElMessage } from "element-plus";
 var httpurl = "http://121.41.112.205:8088";
+// var url = httpStore().$state.baseHost
+
+// const httpstore = httpStore()
+
+
 
 const service = axios.create({
     baseURL: httpurl,

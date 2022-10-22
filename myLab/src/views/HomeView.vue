@@ -14,9 +14,9 @@ import HomeFooter from "../components/Home/HomeFooter.vue";
   <HomeOne />
   <HomeTwo />
   <HomeThree />
-  <HomeFour />
-  <HomeFive />
-  <HomeSix />
+  <!-- <HomeFour /> -->
+  <!-- <HomeFive /> -->
+  <!-- <HomeSix /> -->
   <HomeFooter />
 </template>
 <style scoped>

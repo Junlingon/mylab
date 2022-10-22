@@ -209,10 +209,361 @@ export const articleStore = defineStore('article', {
                     },
                 ]
             },
-            {},
-            {},
-            {},
-            {},
+            {
+                artTitle: "逐梦设计数智化",
+                artSubTitleDate: "2020.12.28",
+                artSubTitleFocus: "8467",
+                coverText: `羚珑智能设计平台是由京东零售集团[用户体验设计部]打造的在线设计服务平台，专注于泛零售领域的设计，帮助客户解决日常经营过程中所碰到的各类设计需求`,
+                paragraphData: [
+                    {
+                        paragraphTitle: "成员",
+                        paragraph: `<p>2020 年，凹凸实验室的前身多终端研发部成立刚好一年，彼时的多终端研发部，是一个拥有 20
+                        多位开发人员的独立前端研发部门，在郑立涛，邓文迪的带领下，我们每天在各类业务开发中穿插，协助各类业务需求的开发。</p>
+                    <p>
+                    <div class="lazyimg jelly-image lazyimg_loaded"
+                        style="background: transparent; position: relative; width: 100%; height: auto;">
+                        <img :src="2.jpg"
+                            alt="" style="max-width: 100%;"></div>
+                    </p>
+                    <p>&lt;div style="text-align: center; margin-bottom: 20px; color: #999"&gt;2015
+                        凹凸实验室大家庭&lt;/div&gt;
+            
+                    </p>
+                    <p>在此期间，部门也产生了很多精品业务，凭借着在 H5
+                        动画方面的造诣，在京东内部小有名气，每到一些大促的时间节点都能收到很多的业务需求，这让团队开始在京东内部开始崭露头角。</p>
+                    `,
+                    },
+                    {
+                        paragraphTitle: "项目",
+                        paragraph: `p>回顾我们思考的疑问，我们在建设一个具有一定规模的前端团队的时候，其目的是否仅仅是服务好业务？</p>
+                        <p>我们给出的答案是否定的。</p>
+                        <h3 id="拥抱开源技术的初心">拥抱开源技术的初心</h3>
+                        <p>依然是 17 年，这一年我们在不断提升业务支持，围绕业务打磨技术产品的同时，在开源上我们也在不断奋进。这一年京东商城的前端主流技术栈还停留在
+                            jQuery，而对于我们的业务来说已经无法忍受 jQuery 带来的研发效率低下的困境，我们开始探索新的技术栈，经过缜密的调研后，开始着手开发类 React
+                            框架
+                            <a
+                                rel="noopener noreferrer">
+                                实验室管理系统
+                            </a>
+                            ，在内部业务经过一番验证后，开始在 GitHub 开源。凭借着当时团队大牛涛哥的出口转内销的推广策略，Nerv 开源第一天登上 GitHub 的
+                            trending 榜，迅速斩获了上千 Star，这对于以<strong>开源</strong>为理念的我们来说，无疑是振奋人心的。
+                        
+                        </p>
+                        <p>时间匆匆忙忙来到 18 年，彼时对于业务来说又迎来新的挑战，各类小程序平台层出不穷，为了应对业务拓展渠道的需求，我们开始探索多端统一开发解决方案，并迅速推出了
+                            <a>
+                                智能交通
+                            </a>
+                            ，实现开发一次，同时生成多端应用，凭借着对 React 语法的独特支持和一天 3 个版本火线迭代的速度，Taro
+                            成为诸多开发者喜爱的解决方案，帮助很多业务上线多端应用，Taro 也成为凹凸实验室的一张技术名片。请参见
+                            <a href="https://aotu.io/notes/2018/06/07/Taro/" target="_blank"
+                                rel="noopener noreferrer">
+                                组件拖拽开发框架 - Toqodj
+                            </a>
+                            。
+                        </p>
+                        <p>
+                        `,
+                    },
+                    {
+                        paragraphTitle: "方向",
+                        paragraph: `<p>而为了应对内部业务的数据服务请求，以及内部诸多的自研平台系统，凹凸实验室又自建了后端研发团队，为各大系统平台提供坚实的后端服务，为业务封装各类微服务方便调用，同时也在数次大促节点抗住了流量压力，团队的技术栈已经不再局限于前端了，开始向全栈模式转变。
+                        </p>
+                        <h3 id="平台化转型">平台化转型</h3>
+                        <p>18 年
+                            19年，我们在不断对我们的各类工具系统进行打磨，做好能力储备。而与此同时，中台的概念兴起，我们团队也开始探索设计研发在中台领域的地位，开始打造公司的设计中台。我们深刻地认识到团队除了对人才的培养之外，更应该关注团队研发资产的沉淀，工具、平台系统、研发组件这些都是团队宝贵的研发资产。而除了不断进行研发能力建设和储备的同时，我们应该将这些已有的能力积木串联起来，成体系化地对外进行赋能，从而实现传统的人力密集型研发向创新型平台体系化研发的转变。
+                        </p>`,
+                    },
+                ],
+                authorData: [
+                    {
+                        authorName: "honly(立)",
+                        authorId: "ID:5b0ff3a0629834a34b663642#",
+                        authorImg: "http://img10.360buyimg.com/ee/s100x100_jfs/t25990/270/571198170/328325/7e5faf5d/5b741001Na90c0413.jpg",
+                        author_docs_num: 78,
+                    },
+                    {
+                        authorName: "luckyadam",
+                        authorId: "ID:5b0ff3a0629834a34b66364d#",
+                        authorImg: "http://img11.360buyimg.com/ee/s100x100_jfs/t1/71587/18/6540/1034616/5d4928b1E8e792460/533d0837eb011b65.jpg",
+                        author_docs_num: 79,
+                    },
+                ],
+                commentsData: [
+                    {
+                        author_name: "前端萌新五月天",
+                        time: "2021/08/25 22:01",
+                        comment: `哈哈哈哈哈`,
+                    },
+                    {
+                        author_name: "Lxx",
+                        time: "2021/05/02 15:38",
+                        comment: `🐂B`,
+                    },
+                ]
+            },
+            {
+                artTitle: "成长蜕变之路",
+                artSubTitleDate: "2021.01.18",
+                artSubTitleFocus: "4334",
+                coverText: `从前端团队出发，我们从 0 至 1 搭建了服务端研发体系，在这边文章主要介绍了我们在竞赛领域方面的一些探索和成就。`,
+                paragraphData: [
+                    {
+                        paragraphTitle: "蓝桥杯",
+                        paragraph: `<p>2020 年，凹凸实验室多次参加蓝桥杯，并且连续拿奖。</p>
+                    <p>
+                    <div class="lazyimg jelly-image lazyimg_loaded"
+                        style="background: transparent; position: relative; width: 100%; height: auto;">
+                        <img :src="2.jpg"
+                            alt="" style="max-width: 100%;"></div>
+                    </p>
+                    <p>&lt;div style="text-align: center; margin-bottom: 20px; color: #999"&gt;2015
+                        666666&lt;/div&gt;
+            
+                    </p>
+                    <p>在此期间，部门也产生了很多精品业务，凭借着在 H5
+                        动画方面的造诣，在京东内部小有名气，每到一些大促的时间节点都能收到很多的业务需求，这让团队开始在京东内部开始崭露头角。</p>
+                    `,
+                    },
+                    {
+                        paragraphTitle: "挑战杯",
+                        paragraph: `p>回顾我们思考的疑问，我们在建设一个具有一定规模的前端团队的时候，其目的是否仅仅是服务好业务？</p>
+                        <p>我们给出的答案是否定的。</p>
+                        <h3 id="拥抱开源技术的初心">拥抱开源技术的初心</h3>
+                        <p>依然是 17 年，这一年我们在不断提升业务支持，围绕业务打磨技术产品的同时，在开源上我们也在不断奋进。这一年京东商城的前端主流技术栈还停留在
+                            jQuery，而对于我们的业务来说已经无法忍受 jQuery 带来的研发效率低下的困境，我们开始探索新的技术栈，经过缜密的调研后，开始着手开发类 React
+                            框架
+                            <a
+                                rel="noopener noreferrer">
+                                实验室管理系统
+                            </a>
+                            ，在内部业务经过一番验证后，开始在 GitHub 开源。凭借着当时团队大牛涛哥的出口转内销的推广策略，Nerv 开源第一天登上 GitHub 的
+                            trending 榜，迅速斩获了上千 Star，这对于以<strong>开源</strong>为理念的我们来说，无疑是振奋人心的。
+                        
+                        </p>
+                        <p>时间匆匆忙忙来到 18 年，彼时对于业务来说又迎来新的挑战，各类小程序平台层出不穷，为了应对业务拓展渠道的需求，我们开始探索多端统一开发解决方案，并迅速推出了
+                            <a>
+                                智能交通
+                            </a>
+                            ，实现开发一次，同时生成多端应用，凭借着对 React 语法的独特支持和一天 3 个版本火线迭代的速度，Taro
+                            成为诸多开发者喜爱的解决方案，帮助很多业务上线多端应用，Taro 也成为凹凸实验室的一张技术名片。请参见
+                            <a href="https://aotu.io/notes/2018/06/07/Taro/" target="_blank"
+                                rel="noopener noreferrer">
+                                组件拖拽开发框架 - Toqodj
+                            </a>
+                            。
+                        </p>
+                        <p>
+                        `,
+                    },
+                    {
+                        paragraphTitle: "创新创业",
+                        paragraph: `<p>而为了应对内部业务的数据服务请求，以及内部诸多的自研平台系统，凹凸实验室又自建了后端研发团队，为各大系统平台提供坚实的后端服务，为业务封装各类微服务方便调用，同时也在数次大促节点抗住了流量压力，团队的技术栈已经不再局限于前端了，开始向全栈模式转变。
+                        </p>
+                        <h3 id="平台化转型">平台化转型</h3>
+                        <p>18 年
+                            19年，我们在不断对我们的各类工具系统进行打磨，做好能力储备。而与此同时，中台的概念兴起，我们团队也开始探索设计研发在中台领域的地位，开始打造公司的设计中台。我们深刻地认识到团队除了对人才的培养之外，更应该关注团队研发资产的沉淀，工具、平台系统、研发组件这些都是团队宝贵的研发资产。而除了不断进行研发能力建设和储备的同时，我们应该将这些已有的能力积木串联起来，成体系化地对外进行赋能，从而实现传统的人力密集型研发向创新型平台体系化研发的转变。
+                        </p>`,
+                    },
+                ],
+                authorData: [
+                    {
+                        authorName: "honly(立)",
+                        authorId: "ID:5b0ff3a0629834a34b663642#",
+                        authorImg: "http://img10.360buyimg.com/ee/s100x100_jfs/t25990/270/571198170/328325/7e5faf5d/5b741001Na90c0413.jpg",
+                        author_docs_num: 78,
+                    },
+                    {
+                        authorName: "luckyadam",
+                        authorId: "ID:5b0ff3a0629834a34b66364d#",
+                        authorImg: "http://img11.360buyimg.com/ee/s100x100_jfs/t1/71587/18/6540/1034616/5d4928b1E8e792460/533d0837eb011b65.jpg",
+                        author_docs_num: 79,
+                    },
+                ],
+                commentsData: [
+                    {
+                        author_name: "前端萌新五月天",
+                        time: "2021/08/25 22:01",
+                        comment: `哈哈哈哈哈`,
+                    },
+                    {
+                        author_name: "Lxx",
+                        time: "2021/05/02 15:38",
+                        comment: `🐂B`,
+                    },
+                ]
+            },
+            {
+                artTitle: "构筑服务端技术中枢",
+                artSubTitleDate: "2021.01.18",
+                artSubTitleFocus: "4334",
+                coverText: `从前端团队出发，我们从 0 至 1 搭建了服务端研发体系，在这边文章主要介绍了我们在竞赛领域方面的一些探索和成就。`,
+                paragraphData: [
+                    {
+                        paragraphTitle: "赵龙指导老师",
+                        paragraph: `<p>2020 年，凹凸实验室多次参加蓝桥杯，并且连续拿奖。</p>
+                    <p>
+                    <div class="lazyimg jelly-image lazyimg_loaded"
+                        style="background: transparent; position: relative; width: 100%; height: auto;">
+                        <img :src="2.jpg"
+                            alt="" style="max-width: 100%;"></div>
+                    </p>
+                    <p>&lt;div style="text-align: center; margin-bottom: 20px; color: #999"&gt;2015
+                        666666&lt;/div&gt;
+            
+                    </p>
+                    <p>在此期间，部门也产生了很多精品业务，凭借着在 H5
+                        动画方面的造诣，在京东内部小有名气，每到一些大促的时间节点都能收到很多的业务需求，这让团队开始在京东内部开始崭露头角。</p>
+                    `,
+                    },
+                    {
+                        paragraphTitle: "高超指导老师",
+                        paragraph: `p>回顾我们思考的疑问，我们在建设一个具有一定规模的前端团队的时候，其目的是否仅仅是服务好业务？</p>
+                        <p>我们给出的答案是否定的。</p>
+                        <h3 id="拥抱开源技术的初心">拥抱开源技术的初心</h3>
+                        <p>依然是 17 年，这一年我们在不断提升业务支持，围绕业务打磨技术产品的同时，在开源上我们也在不断奋进。这一年京东商城的前端主流技术栈还停留在
+                            jQuery，而对于我们的业务来说已经无法忍受 jQuery 带来的研发效率低下的困境，我们开始探索新的技术栈，经过缜密的调研后，开始着手开发类 React
+                            框架
+                            <a
+                                rel="noopener noreferrer">
+                                实验室管理系统
+                            </a>
+                            ，在内部业务经过一番验证后，开始在 GitHub 开源。凭借着当时团队大牛涛哥的出口转内销的推广策略，Nerv 开源第一天登上 GitHub 的
+                            trending 榜，迅速斩获了上千 Star，这对于以<strong>开源</strong>为理念的我们来说，无疑是振奋人心的。
+                        
+                        </p>
+                        <p>时间匆匆忙忙来到 18 年，彼时对于业务来说又迎来新的挑战，各类小程序平台层出不穷，为了应对业务拓展渠道的需求，我们开始探索多端统一开发解决方案，并迅速推出了
+                            <a>
+                                智能交通
+                            </a>
+                            ，实现开发一次，同时生成多端应用，凭借着对 React 语法的独特支持和一天 3 个版本火线迭代的速度，Taro
+                            成为诸多开发者喜爱的解决方案，帮助很多业务上线多端应用，Taro 也成为凹凸实验室的一张技术名片。请参见
+                            <a href="https://aotu.io/notes/2018/06/07/Taro/" target="_blank"
+                                rel="noopener noreferrer">
+                                组件拖拽开发框架 - Toqodj
+                            </a>
+                            。
+                        </p>
+                        <p>
+                        `,
+                    },
+                ],
+                authorData: [
+                    {
+                        authorName: "honly(立)",
+                        authorId: "ID:5b0ff3a0629834a34b663642#",
+                        authorImg: "http://img10.360buyimg.com/ee/s100x100_jfs/t25990/270/571198170/328325/7e5faf5d/5b741001Na90c0413.jpg",
+                        author_docs_num: 78,
+                    },
+                    {
+                        authorName: "luckyadam",
+                        authorId: "ID:5b0ff3a0629834a34b66364d#",
+                        authorImg: "http://img11.360buyimg.com/ee/s100x100_jfs/t1/71587/18/6540/1034616/5d4928b1E8e792460/533d0837eb011b65.jpg",
+                        author_docs_num: 79,
+                    },
+                ],
+                commentsData: [
+                    {
+                        author_name: "前端萌新五月天",
+                        time: "2021/08/25 22:01",
+                        comment: `哈哈哈哈哈`,
+                    },
+                    {
+                        author_name: "Lxx",
+                        time: "2021/05/02 15:38",
+                        comment: `🐂B`,
+                    },
+                ]
+            },
+            {
+                artTitle: "智能车·开启产研效率革命",
+                artSubTitleDate: "2022.01.18",
+                artSubTitleFocus: "4334",
+                coverText: `从前端团队出发，我们从 0 至 1 搭建了服务端研发体系，在这边文章主要介绍了我们在竞赛领域方面的一些探索和成就。`,
+                paragraphData: [
+                    {
+                        paragraphTitle: "智能车一号",
+                        paragraph: `<p>四轮组。</p>
+                    <p>
+                    <div class="lazyimg jelly-image lazyimg_loaded"
+                        style="background: transparent; position: relative; width: 100%; height: auto;">
+                        <img :src="2.jpg"
+                            alt="" style="max-width: 100%;"></div>
+                    </p>
+                    <p>&lt;div style="text-align: center; margin-bottom: 20px; color: #999"&gt;2015
+                        666666&lt;/div&gt;
+            
+                    </p>
+                    <p>在此期间，部门也产生了很多精品业务，凭借着在 H5
+                        动画方面的造诣，在京东内部小有名气，每到一些大促的时间节点都能收到很多的业务需求，这让团队开始在京东内部开始崭露头角。</p>
+                    `,
+                    },
+                    {
+                        paragraphTitle: "智能车二号",
+                        paragraph: `<p>三轮组。</p>
+                        <h3 id="拥抱开源技术的初心">拥抱开源技术的初心</h3>
+                        <p>依然是 17 年，这一年我们在不断提升业务支持，围绕业务打磨技术产品的同时，在开源上我们也在不断奋进。这一年京东商城的前端主流技术栈还停留在
+                            jQuery，而对于我们的业务来说已经无法忍受 jQuery 带来的研发效率低下的困境，我们开始探索新的技术栈，经过缜密的调研后，开始着手开发类 React
+                            框架
+                            <a
+                                rel="noopener noreferrer">
+                                实验室管理系统
+                            </a>
+                            ，在内部业务经过一番验证后，开始在 GitHub 开源。凭借着当时团队大牛涛哥的出口转内销的推广策略，Nerv 开源第一天登上 GitHub 的
+                            trending 榜，迅速斩获了上千 Star，这对于以<strong>开源</strong>为理念的我们来说，无疑是振奋人心的。
+                        
+                        </p>
+                        <p>时间匆匆忙忙来到 18 年，彼时对于业务来说又迎来新的挑战，各类小程序平台层出不穷，为了应对业务拓展渠道的需求，我们开始探索多端统一开发解决方案，并迅速推出了
+                            <a>
+                                智能交通
+                            </a>
+                            ，实现开发一次，同时生成多端应用，凭借着对 React 语法的独特支持和一天 3 个版本火线迭代的速度，Taro
+                            成为诸多开发者喜爱的解决方案，帮助很多业务上线多端应用，Taro 也成为凹凸实验室的一张技术名片。请参见
+                            <a href="https://aotu.io/notes/2018/06/07/Taro/" target="_blank"
+                                rel="noopener noreferrer">
+                                组件拖拽开发框架 - Toqodj
+                            </a>
+                            。
+                        </p>
+                        <p>
+                        `,
+                    },
+                    {
+                        paragraphTitle: "创新创业",
+                        paragraph: `<p>而为了应对内部业务的数据服务请求，以及内部诸多的自研平台系统，凹凸实验室又自建了后端研发团队，为各大系统平台提供坚实的后端服务，为业务封装各类微服务方便调用，同时也在数次大促节点抗住了流量压力，团队的技术栈已经不再局限于前端了，开始向全栈模式转变。
+                        </p>
+                        <h3 id="平台化转型">平台化转型</h3>
+                        <p>18 年
+                            19年，我们在不断对我们的各类工具系统进行打磨，做好能力储备。而与此同时，中台的概念兴起，我们团队也开始探索设计研发在中台领域的地位，开始打造公司的设计中台。我们深刻地认识到团队除了对人才的培养之外，更应该关注团队研发资产的沉淀，工具、平台系统、研发组件这些都是团队宝贵的研发资产。而除了不断进行研发能力建设和储备的同时，我们应该将这些已有的能力积木串联起来，成体系化地对外进行赋能，从而实现传统的人力密集型研发向创新型平台体系化研发的转变。
+                        </p>`,
+                    },
+                ],
+                authorData: [
+                    {
+                        authorName: "honly(立)",
+                        authorId: "ID:5b0ff3a0629834a34b663642#",
+                        authorImg: "http://img10.360buyimg.com/ee/s100x100_jfs/t25990/270/571198170/328325/7e5faf5d/5b741001Na90c0413.jpg",
+                        author_docs_num: 78,
+                    },
+                    {
+                        authorName: "luckyadam",
+                        authorId: "ID:5b0ff3a0629834a34b66364d#",
+                        authorImg: "http://img11.360buyimg.com/ee/s100x100_jfs/t1/71587/18/6540/1034616/5d4928b1E8e792460/533d0837eb011b65.jpg",
+                        author_docs_num: 79,
+                    },
+                ],
+                commentsData: [
+                    {
+                        author_name: "前端萌新五月天",
+                        time: "2021/08/25 22:01",
+                        comment: `哈哈哈哈哈`,
+                    },
+                    {
+                        author_name: "Lxx",
+                        time: "2021/05/02 15:38",
+                        comment: `🐂B`,
+                    },
+                ]
+            },
         ])
         return { articleData }
     },

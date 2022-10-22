@@ -56,26 +56,26 @@ const ListData=[
   {
     img:img2,
     href:'/article/2',
-    contentName:"智能设计平台",
+    contentName:"成员展示平台",
     contentDesc:"逐梦设计数智化",
   },
   {
     img:img3,
     href:'/article/3',
-    contentName:"羚珑页面可视化搭建",
+    contentName:"竞赛情况可视化",
     contentDesc:"成长蜕变之路",
   },
   {
     img:img4,
     href:'/article/4',
-    contentName:"基础服务体系",
+    contentName:"指导服务体系",
     contentDesc:"构筑服务端技术中枢",
   },
   {
     img:img5,
     href:'/article/5',
     contentName:"DECO",
-    contentDesc:"智能代码·开启产研效率革命",
+    contentDesc:"智能车·开启产研效率革命",
   },
 ]
 
