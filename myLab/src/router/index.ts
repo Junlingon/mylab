@@ -38,6 +38,38 @@ const router = createRouter({
         title: "文章"
       },
     },
+    {//车队
+      path: '/Motorcade',
+      name: 'Article',
+      component: () => import('../views/MotorcadeView.vue'),
+      meta: {
+        title: "车队"
+      },
+    },
+    {//元素
+      path: '/Element',
+      name: 'Element',
+      component: () => import('../views/ElementView.vue'),
+      meta: {
+        title: "元素"
+      },
+    },
+    {//轨迹
+      path: '/Locus',
+      name: 'Locus',
+      component: () => import('../views/LocusView.vue'),
+      meta: {
+        title: "轨迹"
+      },
+    },
+    {//赛道
+      path: '/Track',
+      name: 'Track',
+      component: () => import('../views/TrackView.vue'),
+      meta: {
+        title: "赛道"
+      },
+    },
     {
       path: '/404',
       name: '404',

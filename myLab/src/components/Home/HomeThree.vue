@@ -4,13 +4,13 @@
       <div class="info">
         <div class="divider"></div>
         <div class="name-en">Products</div>
-        <div class="name">明星产品</div>
+        <div class="name">智能产品</div>
         <div class="desc">凹凸实验室出品的一系列产品</div>
       </div>
       <div class="main">
         <div class="wrapper wrapper-first">
-          <div class="wrapper-q wrapper-top wrapper-default-hover-height">
-            <div class="content">
+          <div class="wrapper-q wrapper-top " :class="{'wrapper-default-hover-height':show}">
+            <div class="content" :class="{'wrapper-flex':hidden}">
               <div class="content-img">
                 <img
                   class="img-inner"
@@ -19,7 +19,7 @@
                 />
               </div>
               <div class="content-words">
-                <div class="content-name">羚珑</div>
+                <div class="content-name">车队</div>
                 <div class="content-desc">
                   京东羚珑智能设计平台，一站式线上智能设计服务平台，为用户提供丰富的设计结果，致力于成为商家经营的设计合作伙伴。
                 </div>
@@ -27,10 +27,10 @@
             </div>
             <a
               class="link"
-              href="https://ling.jd.com"
+              href="/Motorcade"
               target="_blank"
               rel="noopener noreferrer"
-              ><div class="goto goto-visible">
+              ><div class="goto " :class="{'goto-visible':show}">
                 <div class="goto-word">浏览网站</div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,11 +66,11 @@
             ></a>
             <div
               class="bg"
-              :style="{ 'background-image': 'url(' + Bg + ')' }"
+              :style="{'background-image': show ? 'url(' + Bg1 + ')':''}"
             ></div>
           </div>
-          <div class="wrapper-q">
-            <div class="wrapper-flex content">
+          <div class="wrapper-q" @mouseover.native="showGJ()" @mouseout.native="hidenGJ()">
+            <div class=" content" :class="{'wrapper-flex':show}">
               <div class="content-img">
                 <img
                   class="img-inner"
@@ -79,7 +79,7 @@
                 />
               </div>
               <div class="content-words">
-                <div class="content-name">TARO</div>
+                <div class="content-name">轨迹</div>
                 <div class="content-desc">
                   开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv
                   等框架来开发微信/京东/百度/支付宝/字节跳动/ QQ 小程序/H5/React
@@ -89,7 +89,7 @@
             </div>
             <a
               class="link"
-              href="https://taro.jd.com"
+              href="/Locus"
               target="_blank"
               rel="noopener noreferrer"
               ><div class="goto">
@@ -126,12 +126,12 @@
                   </g>
                 </svg></div
             ></a>
-            <div class="bg" style=""></div>
+            <div class="bg" :style="{ 'background-image': hidden ?'url(' + Bg2 + ')':'' }"></div>
           </div>
         </div>
         <div class="wrapper">
-          <div class="wrapper-q wrapper-top">
-            <div class="content">
+          <div class="wrapper-q wrapper-top" @mouseover.native="showGJ()" @mouseout.native="hidenGJ()">
+            <div class="content" :class="{'wrapper-flex':hidden}">
               <div class="content-img">
                 <img
                   class="img-inner"
@@ -140,7 +140,7 @@
                 />
               </div>
               <div class="content-words">
-                <div class="content-name">DECO</div>
+                <div class="content-name">元素</div>
                 <div class="content-desc">
                   用户体验设计部·体验技术部主导开发的前端智能化项目，它能将设计稿一键转为多端代码，可以帮助开发人员快速实现设计稿重构还原，提升开发效率。
                 </div>
@@ -148,7 +148,7 @@
             </div>
             <a
               class="link"
-              href="https://jelly.jd.com/article/5ffbc4fcdd7c080151c80c74"
+              href="/Element"
               target="_blank"
               rel="noopener noreferrer"
               ><div class="goto">
@@ -185,10 +185,10 @@
                   </g>
                 </svg></div
             ></a>
-            <div class="bg-hXcbf" style=""></div>
+            <div class="bg" :style="{ 'background-image':hidden? 'url(' + Bg3 + ')':'' }"></div>
           </div>
-          <div class="wrapper-q">
-            <div class="content">
+          <div class="wrapper-q" @mouseover.native="showGJ()" @mouseout.native="hidenGJ()">
+            <div class="content" :class="{'wrapper-flex':hidden}">
               <div class="content-img">
                 <img
                   class="img-inner"
@@ -197,7 +197,7 @@
                 />
               </div>
               <div class="content-words">
-                <div class="content-name">TIDE</div>
+                <div class="content-name">赛道</div>
                 <div class="content-desc">
                   移动端一站式研发平台，旨在为开发者提供全新的可视化多端开发工作流，帮助开发者及业务方降低研发成本，提高开发效率。
                 </div>
@@ -205,7 +205,7 @@
             </div>
             <a
               class="link"
-              href="https://jelly.jd.com/article/6006b1065b6c6a01506c885e"
+              href="/Track"
               target="_blank"
               rel="noopener noreferrer"
               ><div class="goto">
@@ -242,7 +242,7 @@
                   </g>
                 </svg></div
             ></a>
-            <div class="bg" style=""></div>
+            <div class="bg" :style="{ 'background-image': hidden ?'url(' + Bg4 + ')' : '' }"></div>
           </div>
         </div>
       </div>
@@ -251,12 +251,23 @@
 </template>
 
   <script setup lang="ts">
-import Bg from "../../assets/img/6638a.png";
+import {ref} from "vue"
+import Bg1 from "../../assets/img/6638a.png";
+import Bg2 from "../../assets/img/de74.png";
+import Bg3 from "../../assets/img/f926c.png";
+import Bg4 from "../../assets/img/6667.png";
 
-// import Vue from 'vue'
-// export default Vue.extend({
+let show=ref(true)
+let hidden =ref(false)
 
-// })
+let showGJ=()=>{
+  show.value=!show.value
+  hidden.value=!hidden.value
+}
+let hidenGJ=()=>{
+  show.value=!show.value
+  hidden.value=!hidden.value
+}
 </script>
   
 <style lang="less" scoped>
@@ -441,5 +452,8 @@ img {
   top: 20px;
   left: 152px;
   width: 65%;
+}
+.wrapper-q:hover .bg,.wrapper-q:hover .goto{
+  opacity: 1;
 }
 </style>

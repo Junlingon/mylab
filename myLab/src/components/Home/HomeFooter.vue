@@ -109,20 +109,13 @@
       </div>
       <div class="list-UURUm">
         <h3>链接</h3>
-        <p>
-          <a
-            href="https://jdc.jd.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >京东用户体验设计部</a
-          >
-        </p>
+      
         <p>
           <a
             href="https://jdrd.jd.com/"
             target="_blank"
             rel="noopener noreferrer"
-            >京东零售设计服务平台</a
+            >实验室后台服务平台</a
           >
         </p>
         <p>
@@ -130,7 +123,7 @@
             href="https://ling.jd.com"
             target="_blank"
             rel="noopener noreferrer"
-            >羚珑智能设计</a
+            >赛道智能设计</a
           >
         </p>
         <p>
@@ -143,34 +136,10 @@
         </p>
         <p>
           <a
-            href="https://www.uisdc.com/"
+            href="/about"
             target="_blank"
             rel="noopener noreferrer"
-            >优设网</a
-          >
-        </p>
-        <p>
-          <a
-            href="https://fed.taobao.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >淘系前端团队</a
-          >
-        </p>
-        <p>
-          <a
-            href="http://eux.baidu.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >百度 EUX</a
-          >
-        </p>
-        <p>
-          <a
-            href="https://www.designup.cn/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Designup</a
+            >关于</a
           >
         </p>
       </div>
@@ -181,7 +150,7 @@
             href="mailto://aotu@jd.com"
             target="_blank"
             rel="noopener noreferrer"
-            >技术交流：aotu@jd.com</a
+            >技术交流：913756523@qq.com</a
           >
         </p>
         <p>
@@ -189,7 +158,7 @@
             href="mailto://aotu-bd@jd.com"
             target="_blank"
             rel="noopener noreferrer"
-            >合作洽谈：aotu-bd@jd.com</a
+            >合作洽谈：13327355197</a
           >
         </p>
       </div>
