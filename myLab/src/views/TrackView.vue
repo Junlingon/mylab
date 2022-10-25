@@ -1,11 +1,14 @@
 <template>
+    <ProductHeader></ProductHeader>
     <LeftMenu></LeftMenu>
     <div>
-        这里是赛道页面
+        <EchartsVue></EchartsVue>
     </div>
 </template>
 
 
 <script lang="ts" setup>
 import LeftMenu from "@/components/Product/LeftMenu.vue"
+import ProductHeader from "@/components/Product/ProductHeader.vue"
+import EchartsVue from "@/assets/Motorcade/Echarts.vue";
 </script>
