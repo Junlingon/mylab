@@ -40,7 +40,7 @@ const router = createRouter({
     },
     {//车队
       path: '/Motorcade',
-      name: 'Article',
+      name: 'Motorcade',
       component: () => import('../views/MotorcadeView.vue'),
       meta: {
         title: "车队"

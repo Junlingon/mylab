@@ -7,40 +7,35 @@ const chartRef: Ref<HTMLElement | null> = ref(null)
 
 const initChart = () => {
   const option: EChartsOption = {
-//     title: {
-//     text: 'World Population'
-//   },
-  tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      type: 'shadow'
-    }
+    legend: {
+    top: 'bottom'
   },
-  legend: {},
-  grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
-  },
-  xAxis: {
-    type: 'value',
-    boundaryGap: [0, 0.01]
-  },
-  yAxis: {
-    type: 'category',
-    data: ['Brazil', 'Indonesia', 'USA', 'India', 'China', 'World']
-  },
+  // toolbox: {
+  //   show: true,
+  //   feature: {
+  //     mark: { show: true },
+  //     dataView: { show: true, readOnly: false },
+  //     restore: { show: true },
+  //     saveAsImage: { show: true }
+  //   }
+  // },
   series: [
     {
-    //   name: '2011',
-      type: 'bar',
-      data: [18203, 23489, 29034, 104970, 131744, 630230]
-    },
-    {
-    //   name: '2012',
-      type: 'bar',
-      data: [19325, 23438, 31000, 121594, 134141, 681807]
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [35,90],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 4, name: '18' },
+        { value: 8, name: '19' },
+        { value: 3, name: '20' },
+        { value: 3, name: '21' },
+        { value: 2, name: '22' },
+      ]
     }
   ]
   };

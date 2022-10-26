@@ -1,7 +1,7 @@
 <template>
   <ProductHeader></ProductHeader>
   <LeftMenu></LeftMenu>
-  <div style="margin-left: 200px;background-color: aliceblue;height: 100vh;">
+  <div style="margin-left: 200px;background-color: #f0f0f0;height: 100vh;">
     <header>
       <h1>车队数据可视化</h1>
       <div class="showTime">当前时间：2022年1月<span></span></div>
@@ -17,7 +17,7 @@
         </div>
         <div class="panel line">
           <h2>折线图-学习变化</h2>
-          <EchartsVue></EchartsVue>
+          <Linechart></Linechart>
           <div class="panel-footer"></div>
         </div>
         <div class="panel pie">
@@ -50,18 +50,18 @@
       </div>
       <div class="column">
         <div class="panel bar1">
-          <h2>柱状图-开发技能</h2>
-          <div class="chart"></div>
+          <h2>柱状图-获奖情况</h2>
+          <HistogramVue2></HistogramVue2>
           <div class="panel-footer"></div>
         </div>
         <div class="panel line1">
-          <h2>折线图-公司人员流动</h2>
-          <div class="chart"></div>
+          <h2>折线图-车队人员流动</h2>
+          <Linechart2></Linechart2>
           <div class="panel-footer"></div>
         </div>
         <div class="panel pie1">
-          <h2>饼形图-各地区程序员占比</h2>
-          <div class="chart"></div>
+          <h2>饼形图-各实验室车队占比</h2>
+          <PiechartVue2></PiechartVue2>
           <div class="panel-footer"></div>
         </div>
       </div>
@@ -72,9 +72,12 @@
 <script lang="ts" setup>
 import LeftMenu from "@/components/Product/LeftMenu.vue"
 import ProductHeader from "@/components/Product/ProductHeader.vue"
-import EchartsVue from "@/assets/Motorcade/Echarts.vue";
-import HistogramVue from "@/assets/Motorcade/Histogram.vue";
-import PiechartVue from "@/assets/Motorcade/Piechart.vue"; 
+import Linechart from "@/components/Product/Motorcade/Linechart.vue";
+import Linechart2 from "@/components/Product/Motorcade/Linechart2.vue";
+import HistogramVue from "@/components/Product/Motorcade/Histogram.vue";
+import HistogramVue2 from "@/components/Product/Motorcade/Histogram2.vue";
+import PiechartVue from "@/components/Product/Motorcade/Piechart.vue"; 
+import PiechartVue2 from "@/components/Product/Motorcade/Piechart2.vue"; 
 </script>
 
 
@@ -91,7 +94,7 @@ li {
 
 @font-face {
   font-family: electronicFont;
-  src: url(@/assets/Motorcade/font/DS-DIGIT.TTF);
+  src: url(@/components/Product/Motorcade/font/DS-DIGIT.TTF);
 }
 
 body {
@@ -108,7 +111,7 @@ body {
 header {
   /* position: relative; */
   height: 2.25rem;
-  background: url(@/assets/Motorcade/imgs/head_bg.png) no-repeat top center;
+  background: url(@/components/Product/Motorcade/imgs/head_bg.png) no-repeat top center;
   background-size: 100% 100%;
 }
 
@@ -147,9 +150,9 @@ header .showTime {
 
 .panel {
   position: relative;
-  height: 11.875rem;
+  height: 12.875rem;
   border: 1px solid rgba(25, 186, 139, 0.17);
-  background: rgba(255, 255, 255, 0.04) url(@/assets/Motorcade/imgs/line\(1\).png);
+  background: rgba(255, 255, 255, 0.04) url(@/components/Product/Motorcade/imgs/line\(1\).png);
   padding: 0 1.1875rem 1.5rem;
   margin-bottom: 1.1875rem;
 }
@@ -324,7 +327,7 @@ header .showTime {
   transform: translate(-50%, -50%);
   width: 18.475rem;
   height: 18.475rem;
-  background: url(@/assets/Motorcade/imgs/map.png) no-repeat;
+  background: url(@/components/Product/Motorcade/imgs/map.png) no-repeat;
   background-size: 100% 100%;
   opacity: 0.3;
 }
@@ -332,7 +335,7 @@ header .showTime {
 .map .map2 {
   width: 24.0375rem;
   height: 24.0375rem;
-  background-image: url(@/assets/Motorcade/imgs/lbx.png);
+  background-image: url(@/components/Product/Motorcade/imgs/lbx.png);
   opacity: 0.6;
   animation: rotate 15s linear infinite;
   z-index: 2;
@@ -341,7 +344,7 @@ header .showTime {
 .map .map3 {
   width: 21.075rem;
   height: 21.075rem;
-  background-image: url(@/assets/Motorcade/imgs/jt.png);
+  background-image: url(@/components/Product/Motorcade/imgs/jt.png);
   animation: rotate1 10s linear infinite;
 }
 

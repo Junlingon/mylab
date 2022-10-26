@@ -10,5 +10,14 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  server: {
+    proxy: {
+      '/path': {
+        target: 'https://echarts.apache.org',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/path/, "")
+      }
+    }
   }
 })
