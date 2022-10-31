@@ -1,7 +1,7 @@
 <template>
     <ProductHeader></ProductHeader>
     <LeftMenu></LeftMenu>
-    <div style="margin-left: 200px">
+    <div style="margin-left: 200px;position: relative;" >
         <EditVue v-if="isEdit"></EditVue>
         <ListView v-else :isEdit="isEdit" @changeEdit="changeEdit"></ListView>
     </div>
